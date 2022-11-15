@@ -1,0 +1,16 @@
+{
+  "name": "proyectofinal",
+  "version": "1.0.0",
+  "description": "Proyecto Final de Desarrollo Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Jesus-Fernando",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-mustache": "^1.0.4",
+    "mustache-express": "^1.3.2"
+  }
+}

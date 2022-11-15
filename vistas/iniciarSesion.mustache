@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Bootstrap--><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container"><!--Contenedor de todo lo del div-->
+        {{#correo}}<p>El correo {{.}} no existe o la constraseña es erronea</p>{{/correo}}
+        <form action="login" method="post">
+            <div class="row"><input class="form-control" type="email" name="correo" placeholder="correo"></div> <!--form-control redondea los campos-->
+            <div class="row"><input type="password" name="password" placeholder="password"></div>
+            <div class="row"><button class="btn btn-primary" type="submit">Ingresar</button></div>
+        </form>
+        <form action="new" method="post">
+            <div class="row"><button class="btn btn-secondary" type="submit">Crear nueva cuenta</button></div>
+        </form>
+    </div>
+    <!--Bootstrap--><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
